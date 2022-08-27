@@ -1,0 +1,742 @@
+ 1----------------------------------------
+Date: 25.07.2022  Time: 15:00:07
+FName:dipa78533 react  c13 2v
+Image:DIPA0009.BMP
+----------------------------------------
+Meter #1:
+Manuf:DISCAR
+Type: DIPA
+Prin.:ELECTRONICAL
+U:    220V       I: 5(10)A
+f:    50Hz       NT:50
+Cntr1:P   T:1    ##:1.0Wh      E
+Cntr2:P   T:1    ##:1.0Wh      E
+Cntr3:P   T:1    ##:1.0Wh      E
+Cntr4:P   T:1    ##:1.0Wh      E
+SerNo:18092
+Cntrs:T1:0.00000 0.00000 0.00000 0.00000
+
+----------------------------------------
+Auto Test Results:
+
+             *** No: 01 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  12A           
+RI2:  12A           
+RI3:  12A           
+Fout1:W4Sum         
+
+Load values:
+P:    220.07 W           PF:  0.2001 
+Q:    1.0778kvar         f:   49.997 Hz
+S:    1.1001kVA
+       - 1 -       - 2 -       - 3 -
+U:    220.03 V    ------ V    ------ V
+I:    4.9999 A    ------ A    ------ A
+Ph:    78.46 Deg ------- Deg ------- Deg
+P:    220.07 W    ------ W    ------ W
+Q:    1.0778kvar  ------ var  ------ var
+S:    1.1001kVA   ------ VA   ------ VA
+PF:   0.2000      ------      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.57 V    219.64 V    ------ V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L1-- 220V 5A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.20 %    ------     ------
+Mid:   -0.29 %    ------     ------
+Std:   +0.07 %    ------     ------
+
+             *** No: 02 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  12A           
+RI2:  12A           
+RI3:  12A           
+Fout1:W4Sum         
+
+Load values:
+P:    220.29 W           PF:  0.2003 
+Q:    1.0774kvar         f:   50.000 Hz
+S:    1.0997kVA
+       - 1 -       - 2 -       - 3 -
+U:    220.03 V    ------ V    ------ V
+I:    4.9981 A    ------ A    ------ A
+Ph:    78.44 Deg ------- Deg ------- Deg
+P:    220.29 W    ------ W    ------ W
+Q:    1.0774kvar  ------ var  ------ var
+S:    1.0997kVA   ------ VA   ------ VA
+PF:   0.2003      ------      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.57 V    219.65 V    ------ V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L1-- 220V 5A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.32 %    ------     ------
+Mid:   -0.29 %    ------     ------
+Std:   +0.04 %    ------     ------
+
+             *** No: 03 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  12A           
+RI2:  12A           
+RI3:  12A           
+Fout1:W4Sum         
+
+Load values:
+P:    220.31 W           PF:  0.2003 
+Q:    1.0775kvar         f:   50.000 Hz
+S:    1.0998kVA
+       - 1 -       - 2 -       - 3 -
+U:    220.03 V    ------ V    ------ V
+I:    4.9984 A    ------ A    ------ A
+Ph:    78.45 Deg ------- Deg ------- Deg
+P:    220.31 W    ------ W    ------ W
+Q:    1.0775kvar  ------ var  ------ var
+S:    1.0998kVA   ------ VA   ------ VA
+PF:   0.2003      ------      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.57 V    219.64 V    ------ V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L1-- 220V 5A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.32 %    ------     ------
+Mid:   -0.32 %    ------     ------
+Std:   +0.02 %    ------     ------
+
+             *** No: 04 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  120mA         
+RI2:  120mA         
+RI3:  120mA         
+Fout1:W4Sum         
+
+Load values:
+P:    3.0883 W           PF:  0.2006 
+Q:    15.080 var         f:   50.000 Hz
+S:    15.393 VA
+       - 1 -       - 2 -       - 3 -
+U:    220.04 V    ------ V    ------ V
+I:    69.964mA    ------ A    ------ A
+Ph:    78.45 Deg ------- Deg ------- Deg
+P:    3.0883 W    ------ W    ------ W
+Q:    15.080 var  ------ var  ------ var
+S:    15.395 VA   ------ VA   ------ VA
+PF:   0.2006      ------      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.58 V    219.65 V    ------ V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L1-- 220V 0.07A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.54 %    ------     ------
+Mid:   -0.57 %    ------     ------
+Std:   +0.03 %    ------     ------
+
+             *** No: 05 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  120mA         
+RI2:  120mA         
+RI3:  120mA         
+Fout1:W4Sum         
+
+Load values:
+P:    3.0921 W           PF:  0.2005 
+Q:    15.111 var         f:   50.002 Hz
+S:    15.424 VA
+       - 1 -       - 2 -       - 3 -
+U:    220.04 V    ------ V    ------ V
+I:    70.105mA    ------ A    ------ A
+Ph:    78.43 Deg ------- Deg ------- Deg
+P:    3.0921 W    ------ W    ------ W
+Q:    15.111 var  ------ var  ------ var
+S:    15.426 VA   ------ VA   ------ VA
+PF:   0.2005      ------      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.57 V    219.64 V    ------ V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L1-- 220V 0.07A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.50 %    ------     ------
+Mid:   -0.54 %    ------     ------
+Std:   +0.04 %    ------     ------
+
+             *** No: 06 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  120mA         
+RI2:  120mA         
+RI3:  120mA         
+Fout1:W4Sum         
+
+Load values:
+P:    3.0864 W           PF:  0.2006 
+Q:    15.071 var         f:   50.000 Hz
+S:    15.383 VA
+       - 1 -       - 2 -       - 3 -
+U:    220.04 V    ------ V    ------ V
+I:    69.920mA    ------ A    ------ A
+Ph:    78.42 Deg ------- Deg ------- Deg
+P:    3.0864 W    ------ W    ------ W
+Q:    15.071 var  ------ var  ------ var
+S:    15.385 VA   ------ VA   ------ VA
+PF:   0.2006      ------      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.57 V    219.65 V    ------ V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L1-- 220V 0.07A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.55 %    ------     ------
+Mid:   -0.54 %    ------     ------
+Std:   +0.02 %    ------     ------
+
+             *** No: 07 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  12A           
+RI2:  12A           
+RI3:  12A           
+Fout1:W4Sum         
+
+Load values:
+P:    219.75 W           PF:  0.1999 
+Q:    1.0774kvar         f:   50.002 Hz
+S:    1.0996kVA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    220.01 V    ------ V
+I:    ------ A    4.9979 A    ------ A
+Ph:  ------- Deg   78.48 Deg ------- Deg
+P:    ------ W    219.75 W    ------ W
+Q:    ------ var  1.0774kvar  ------ var
+S:    ------ VA   1.0996kVA   ------ VA
+PF:   ------      0.1998      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.54 V    ------ V    219.53 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L-2- 220V 5A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.16 %    ------     ------
+Mid:   -0.19 %    ------     ------
+Std:   +0.03 %    ------     ------
+
+             *** No: 08 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  12A           
+RI2:  12A           
+RI3:  12A           
+Fout1:W4Sum         
+
+Load values:
+P:    219.81 W           PF:  0.1999 
+Q:    1.0774kvar         f:   50.000 Hz
+S:    1.0996kVA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    220.02 V    ------ V
+I:    ------ A    4.9980 A    ------ A
+Ph:  ------- Deg   78.46 Deg ------- Deg
+P:    ------ W    219.81 W    ------ W
+Q:    ------ var  1.0774kvar  ------ var
+S:    ------ VA   1.0996kVA   ------ VA
+PF:   ------      0.1999      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.55 V    ------ V    219.53 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L-2- 220V 5A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.20 %    ------     ------
+Mid:   -0.20 %    ------     ------
+Std:   +0.07 %    ------     ------
+
+             *** No: 09 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  12A           
+RI2:  12A           
+RI3:  12A           
+Fout1:W4Sum         
+
+Load values:
+P:    220.14 W           PF:  0.2003 
+Q:    1.0771kvar         f:   50.000 Hz
+S:    1.0994kVA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    219.98 V    ------ V
+I:    ------ A    4.9975 A    ------ A
+Ph:  ------- Deg   78.46 Deg ------- Deg
+P:    ------ W    220.14 W    ------ W
+Q:    ------ var  1.0771kvar  ------ var
+S:    ------ VA   1.0994kVA   ------ VA
+PF:   ------      0.2002      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.51 V    ------ V    219.50 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L-2- 220V 5A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.16 %    ------     ------
+Mid:   -0.20 %    ------     ------
+Std:   +0.07 %    ------     ------
+
+             *** No: 10 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  120mA         
+RI2:  120mA         
+RI3:  120mA         
+Fout1:W4Sum         
+
+Load values:
+P:    3.0739 W           PF:  0.1995 
+Q:    15.103 var         f:   50.002 Hz
+S:    15.412 VA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    220.02 V    ------ V
+I:    ------ A    70.057mA    ------ A
+Ph:  ------- Deg   78.40 Deg ------- Deg
+P:    ------ W    3.0739 W    ------ W
+Q:    ------ var  15.103 var  ------ var
+S:    ------ VA   15.414 VA   ------ VA
+PF:   ------      0.1994      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.55 V    ------ V    219.54 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L-2- 220V 0.07A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.07 %    ------     ------
+Mid:   -0.07 %    ------     ------
+Std:   +0.01 %    ------     ------
+
+             *** No: 11 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  120mA         
+RI2:  120mA         
+RI3:  120mA         
+Fout1:W4Sum         
+
+Load values:
+P:    3.0960 W           PF:  0.2011 
+Q:    15.085 var         f:   50.000 Hz
+S:    15.400 VA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    219.97 V    ------ V
+I:    ------ A    70.016mA    ------ A
+Ph:  ------- Deg   78.38 Deg ------- Deg
+P:    ------ W    3.0960 W    ------ W
+Q:    ------ var  15.085 var  ------ var
+S:    ------ VA   15.401 VA   ------ VA
+PF:   ------      0.2010      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.50 V    ------ V    219.49 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L-2- 220V 0.07A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.06 %    ------     ------
+Mid:   -0.07 %    ------     ------
+Std:   +0.01 %    ------     ------
+
+             *** No: 12 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  120mA         
+RI2:  120mA         
+RI3:  120mA         
+Fout1:W4Sum         
+
+Load values:
+P:    3.0706 W           PF:  0.1992 
+Q:    15.103 var         f:   50.002 Hz
+S:    15.412 VA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    220.01 V    ------ V
+I:    ------ A    70.057mA    ------ A
+Ph:  ------- Deg   78.52 Deg ------- Deg
+P:    ------ W    3.0706 W    ------ W
+Q:    ------ var  15.103 var  ------ var
+S:    ------ VA   15.414 VA   ------ VA
+PF:   ------      0.1992      ------  
+       - 12 -      - 31 -      - 32 -
+U:    219.54 V    ------ V    219.53 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L-2- 220V 0.07A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.06 %    ------     ------
+Mid:   -0.08 %    ------     ------
+Std:   +0.03 %    ------     ------
+
+             *** No: 13 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  12A           
+RI2:  12A           
+RI3:  12A           
+Fout1:W4Sum         
+
+Load values:
+P:    220.07 W           PF:  0.2002 
+Q:    1.0773kvar         f:   49.999 Hz
+S:    1.0996kVA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    ------ V    219.97 V
+I:    ------ A    ------ A    4.9987 A
+Ph:  ------- Deg ------- Deg   78.44 Deg
+P:    ------ W    ------ W    220.07 W
+Q:    ------ var  ------ var  1.0773kvar
+S:    ------ VA   ------ VA   1.0996kVA
+PF:   ------      ------      0.2001  
+       - 12 -      - 31 -      - 32 -
+U:    ------ V    219.60 V    219.51 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L--3 220V 5A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.08 %    ------     ------
+Mid:   -0.09 %    ------     ------
+Std:   +0.06 %    ------     ------
+
+             *** No: 14 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  12A           
+RI2:  12A           
+RI3:  12A           
+Fout1:W4Sum         
+
+Load values:
+P:    220.12 W           PF:  0.2001 
+Q:    1.0776kvar         f:   50.002 Hz
+S:    1.0999kVA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    ------ V    220.00 V
+I:    ------ A    ------ A    4.9997 A
+Ph:  ------- Deg ------- Deg   78.47 Deg
+P:    ------ W    ------ W    220.12 W
+Q:    ------ var  ------ var  1.0776kvar
+S:    ------ VA   ------ VA   1.0999kVA
+PF:   ------      ------      0.2001  
+       - 12 -      - 31 -      - 32 -
+U:    ------ V    219.63 V    219.54 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L--3 220V 5A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.04 %    ------     ------
+Mid:   -0.06 %    ------     ------
+Std:   +0.04 %    ------     ------
+
+             *** No: 15 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  12A           
+RI2:  12A           
+RI3:  12A           
+Fout1:W4Sum         
+
+Load values:
+P:    220.14 W           PF:  0.2002 
+Q:    1.0773kvar         f:   50.002 Hz
+S:    1.0996kVA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    ------ V    219.99 V
+I:    ------ A    ------ A    4.9985 A
+Ph:  ------- Deg ------- Deg   78.44 Deg
+P:    ------ W    ------ W    220.14 W
+Q:    ------ var  ------ var  1.0773kvar
+S:    ------ VA   ------ VA   1.0996kVA
+PF:   ------      ------      0.2002  
+       - 12 -      - 31 -      - 32 -
+U:    ------ V    219.62 V    219.52 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L--3 220V 5A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.08 %    ------     ------
+Mid:   -0.10 %    ------     ------
+Std:   +0.06 %    ------     ------
+
+             *** No: 16 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  120mA         
+RI2:  120mA         
+RI3:  120mA         
+Fout1:W4Sum         
+
+Load values:
+P:    3.0647 W           PF:  0.1992 
+Q:    15.081 var         f:   50.000 Hz
+S:    15.389 VA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    ------ V    219.99 V
+I:    ------ A    ------ A    69.963mA
+Ph:  ------- Deg ------- Deg   78.45 Deg
+P:    ------ W    ------ W    3.0647 W
+Q:    ------ var  ------ var  15.081 var
+S:    ------ VA   ------ VA   15.391 VA
+PF:   ------      ------      0.1991  
+       - 12 -      - 31 -      - 32 -
+U:    ------ V    219.62 V    219.53 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L--3 220V 0.07A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.07 %    ------     ------
+Mid:   -0.10 %    ------     ------
+Std:   +0.02 %    ------     ------
+
+             *** No: 17 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  120mA         
+RI2:  120mA         
+RI3:  120mA         
+Fout1:W4Sum         
+
+Load values:
+P:    3.1048 W           PF:  0.2015 
+Q:    15.096 var         f:   50.000 Hz
+S:    15.412 VA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    ------ V    220.00 V
+I:    ------ A    ------ A    70.064mA
+Ph:  ------- Deg ------- Deg   78.30 Deg
+P:    ------ W    ------ W    3.1048 W
+Q:    ------ var  ------ var  15.096 var
+S:    ------ VA   ------ VA   15.414 VA
+PF:   ------      ------      0.2014  
+       - 12 -      - 31 -      - 32 -
+U:    ------ V    219.62 V    219.53 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L--3 220V 0.07A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.06 %    ------     ------
+Mid:   -0.07 %    ------     ------
+Std:   +0.01 %    ------     ------
+
+             *** No: 18 ***
+Reference settings:
+Mode: 4W Qn         t:    1.0s
+InU:  Direct voltage inputs
+InI:  Direct current inputs 1A/10A
+RU1:  240V          
+RU2:  240V          
+RU3:  240V          
+RI1:  120mA         
+RI2:  120mA         
+RI3:  120mA         
+Fout1:W4Sum         
+
+Load values:
+P:    3.1016 W           PF:  0.2013 
+Q:    15.094 var         f:   50.000 Hz
+S:    15.410 VA
+       - 1 -       - 2 -       - 3 -
+U:    ------ V    ------ V    220.00 V
+I:    ------ A    ------ A    70.054mA
+Ph:  ------- Deg ------- Deg   78.47 Deg
+P:    ------ W    ------ W    3.1016 W
+Q:    ------ var  ------ var  15.094 var
+S:    ------ VA   ------ VA   15.412 VA
+PF:   ------      ------      0.2013  
+       - 12 -      - 31 -      - 32 -
+U:    ------ V    219.62 V    219.53 V
+Ph:   ------ Deg              ------ Deg
+       - 12 -      - 23 -      - 31 -
+PhU: ------- Deg ------- Deg ------- Deg
+PhI: ------- Deg ------- Deg ------- Deg
+
+Test Type: Error:
+LP:   L--3 220V 0.07A phi=78.46deg
+t/n:   1imp.      ------     ------
+Stat:  OK         ------     ------
+Err:   -0.07 %    ------     ------
+Mid:   -0.08 %    ------     ------
+Std:   +0.02 %    ------     ------
+
+
