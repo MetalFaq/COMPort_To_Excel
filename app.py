@@ -18,11 +18,10 @@ from dic_to_list import dic_to_list
 from write_excel import write_excel_scva, write_excel_norma
 
 # ---------------------------Inicia comunicacion serie-------------------------------------------------------------------
-# from com_serie import read_serial_port
-# read_serial_port()
+from com_serie import read_serial_port
+read_serial_port()
 # _______________________________________________________________________________________________________________________
 
-# file_text = abrir_archivo()
 file_load = [] #contiene cada linea del archivo de datos.
 
 def open_file():
@@ -30,69 +29,10 @@ def open_file():
     abs_path = os.path.dirname(__file__)
     relative_path = "/DATA"
     full_path = abs_path + relative_path
-    filename = full_path + '/data_reac.txt' #data.txt
+    filename = full_path + '/data.txt' #data.txt
     with open(filename, 'r') as file:
         file_load = [lines.strip() for lines in file.readlines()]
     return file_load
-
-# def get_file_name():  # definir como var global a file load.
-#     # Ya lo tengo cargado al archivo con el content manager, sino en ésta funcion tengo que hacerlo de nuevo.
-#     for line in file_load:  # Una vez cargado debo recorrelo.
-#         expression = 'FName:(.*)'  # Regular expression "." letters, numbers,simbols, but not newlines.
-#         matches = re.search(expression, line)
-#
-#         if matches:
-#             # print(matches.group(0))
-#             # print(matches.group(1))
-#             file_name = str(matches.group(1))
-#     # print(file_name)
-#     return file_name
-##########################################################
-# def get_info():
-#     for info in file_load:  # gruop(1): fase; group(2): tension, group(3): corriente.
-#         expression = 'LP:   [A-Z]([0-9]+--|-[0-9]-|--[0-9]|[0-9]+)+ ([0-9]+)V+ ([0-9\.0-9]+)A+ phi=([+-0-9\.0-9]+)'
-#         matches = re.search(expression, info)
-#
-#         if matches:
-#             # print(matches.group(3))
-#             # print(matches.group(1))
-#             fase = str(matches.group(1))
-#             tension = float(matches.group(2))
-#             corriente = float(matches.group(3))
-#             angulo = str(matches.group(4))
-#             dic = {'fase': fase, 'tension': tension, 'phi': angulo, 'corriente': corriente, 'error': None}
-#             dic_list.append(dic)
-#
-#     return dic_list
-#
-#
-# def get_errors():
-#     i = 0
-#     for error in file_load:
-#         expression = 'Mid:   ([+-0-9]+[.0-9]+)'
-#         matches = re.search(expression, error)
-#
-#         if matches:
-#             # print(matches.group(0))
-#             # print(matches.group(1))
-#             value_error = float(matches.group(1))
-#             dic_list[i]['error'] = value_error
-#             i += 1
-#
-#     return dic_list
-####################################################################
-# def get_name_for_scva():
-#     for line in file_load:
-#         expression = 'FName:([A0-Za9-z9]+)'
-#         matches = re.search(expression, line)
-#
-#         if matches:
-#             # print(matches.group(0))
-#             # print(matches.group(1))
-#             file_name_scva = str(matches.group(1))
-#
-#     # print(file_name_scva)
-#     return file_name_scva
 
 def get_tipo_num_serie():
 

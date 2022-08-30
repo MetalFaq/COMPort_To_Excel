@@ -1,6 +1,6 @@
 '''Si tenés el nombre SERIAL por algun lado dando vuelta nombrando alguna carpeta o archivo, reemplazalo por otro.'''
 
-# import serial.tools.list_ports as port_lists
+import serial.tools.list_ports as port_lists
 import serial
 import os
 from time import sleep
@@ -8,6 +8,10 @@ from time import sleep
 abs_path = os.path.dirname(__file__)
 relative_path = "/DATA"
 full_path = abs_path + relative_path
+
+# Si no existe el directorio, lo crea el programa
+if not os.path.exists(full_path):
+    os.mkdir(full_path)
 
 # Para saber los puertos disponibles:
 # 1) En la función "read_serial_port()" colocá un punto de debug
@@ -19,6 +23,10 @@ full_path = abs_path + relative_path
 #     print(p)
 
 def read_serial_port():
+
+    ports = list(port_lists.comports())
+    for p in ports:
+        print(p)
 
     port_com = input("Ingrese Puerto de comunicacion: ")
     ser = serial.Serial(port_com, 115200)

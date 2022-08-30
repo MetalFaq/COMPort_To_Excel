@@ -1,6 +1,3 @@
-# import pandas as pd
-# import matplotlib.pyplot as plt
-
 import sys
 import os
 import xlwings as xw
@@ -8,117 +5,20 @@ from openpyxl import load_workbook
 from datetime import datetime
 from dic_to_list import list_e_fase1, list_e_fase2, list_e_fase3,  list_phi_f1
 
-# df1 = []
-# df2 = []
-# df3 = []
-# df4 = []
-
-# def build_dataframe():
-#
-#     global df1, df2, df3, df4
-#     df1 = pd.DataFrame({
-#         'Corriente Fase 1': list_i_fase1,
-#         'Error Fase 1': list_e_fase1,
-#         'Phi': list_phi_f1
-#     })
-#     df2 = pd.DataFrame({
-#         'Corriente Fase 2': list_i_fase2,
-#         'Error Fase 2': list_e_fase2,
-#         'Phi': list_phi_f2
-#     })
-#     df3 = pd.DataFrame({
-#         'Corriente Fase 3': list_i_fase3,
-#         'Error Fase 3': list_e_fase3,
-#         'Phi': list_phi_f3
-#     })
-#     df4 = pd.DataFrame({
-#         'Corriente Fase 123': list_i_fase123,
-#         'Error Fase 123': list_e_fase123,
-#         'Phi': list_phi_f123
-#     })
-
-# def write_to_excel_default(file_name):
-#
-#     name = file_name + '.xlsx'
-#     data = pd.ExcelWriter(name, engine = 'xlsxwriter')
-#     df1.to_excel(data, sheet_name='Default', index=False)
-#     df2.to_excel(data, sheet_name='Default', index = False, startcol = 4)
-#     df3.to_excel(data, sheet_name='Default', index = False, startcol = 8)
-#     if not df4.empty:                                                     # Si el data frame no es vacio ( si es true)
-#         df4.to_excel(data, sheet_name='Default', index=False, startcol=12)
-#     else:                                                                 # Sie el df es false (esta vacio)
-#         pass
-#     data.save()
-
-# def write_to_excel(file_name):
-#
-#     global df1, df2, df3, df4
-#
-#     # data_filter1 = df1.groupby(key).filter(lambda x: (x[key] == value).any())
-#     # data_filter2 = df2.groupby(key).filter(lambda x: (x[key] == value).any())
-#     # data_filter3 = df3.groupby(key).filter(lambda x: (x[key] == value).any())
-#     # data_filter4 = df4.groupby(key).filter(lambda x: (x[key] == value).any())
-#     # name = file_name +'_'+ key + value + '.xlsx'
-#
-#     data_filter1 = df1.groupby(by=["Phi", "Corriente Fase 1"]).mean()
-#     data_filter2 = df2.groupby(by=["Phi", "Corriente Fase 2"]).mean()
-#     data_filter3 = df3.groupby(by=["Phi", "Corriente Fase 3"]).mean()
-#     data_filter4 = df4.groupby(by=["Phi", "Corriente Fase 123"]).mean()
-#
-#     # Escribe Excel con datos por defecto
-#     name = file_name + '.xlsx'
-#     data = pd.ExcelWriter(name, engine='xlsxwriter')
-#     if not df1.empty:
-#         df1.to_excel(data, sheet_name='Default', index=False)
-#     if not df2.empty:                                                                                                   # Si es monofasico que no escriba los titulos de las columnas de otras fases.
-#         df2.to_excel(data, sheet_name='Default', index=False, startcol=4)
-#     if not df3.empty:
-#         df3.to_excel(data, sheet_name='Default', index=False, startcol=8)
-#     if not df4.empty:
-#         df4.to_excel(data, sheet_name='Default', index=False, startcol=12)
-#
-#
-#     # Ajusta el ancho de las columnas.
-#     worksheet = data.sheets['Default']
-#     worksheet.set_column('A:B', 15)
-#     worksheet.set_column('E:F', 15)
-#     worksheet.set_column('I:J', 15)
-#     worksheet.set_column('M:N', 16)
-#
-#     #Escribe datos fitrados por angulo.
-#     if not data_filter1.empty:
-#         data_filter1.to_excel(data, sheet_name='Filtrado', index=True)                                                      # Se usa index true para poder escribir en el excel las columnas filtradas con groupby( Phi, Corriente Fase x).
-#     if not data_filter2.empty:                                                                                                   # Si es monofasico no escribe, de lo contrario daba error.
-#         data_filter2.to_excel(data, sheet_name='Filtrado', index=True, startcol=4)
-#     if not data_filter3.empty:
-#         data_filter3.to_excel(data, sheet_name='Filtrado', index=True, startcol=8)
-#     if not data_filter4.empty:                                                                                                   # Si el data frame no es vacio ( si es true)
-#         data_filter4.to_excel(data, sheet_name='Filtrado', index=True, startcol=12)
-#
-#
-#     # Obtiene los objetos xlsxwriter desde el dataframe
-#     worksheet = data.sheets['Filtrado']
-#     # workbook = data.book
-#
-#     # Ajusta el ancho de las columnas
-#     worksheet.set_column('B:C', 15)
-#     worksheet.set_column('F:G', 15)
-#     worksheet.set_column('J:K', 15)
-#     worksheet.set_column('N:O', 17)
-#
-#     # chart = workbook.add_chart({'type': 'line'})
-#     # chart.add_series({'values': 'Filtrado'})
-#
-#     data.save()
-
+# absoluta ubicación de este archivo .py
 abs_path = os.path.dirname(__file__)
-# Path & name file
+
+# Path donde se van a guardar las planillas cargadas con datos
 relative_path_file = "/resultados"
 full_path_file = abs_path + relative_path_file
-# Path & name template SCVA
+if not os.path.exists(full_path_file):
+    os.mkdir(full_path_file)
+
+# Path Planilla SCVA
 relative_path_template_scva = "/Planillas/Planilla_SCVA.xlsx"
 full_path_template = abs_path + relative_path_template_scva
-# Path & name template normativa
+
+# Path Planilla p/normativa
 relative_path_template_norma = "/Planillas/Planilla_Norma.xls"
 full_path_template_norma = abs_path + relative_path_template_norma
 
@@ -293,66 +193,3 @@ def write_excel_norma(data, type_num):
             sys.exit(1)
 
     wb.save(name_file)
-
-# def plot_graph(name_file):
-#
-#     # Crea una lista con valores de phi unicos
-#     list_phi = df1['Phi'].unique().tolist()   # Supongo que la fase 1 tendra los mismo angulos que la 2 y 3. En el ensayo por fase.
-#     list_phi_4 = df4['Phi'].unique().tolist() # Lista de ang para ensayo energizacion simultanea 123.
-#     estilos = ['b.-', 'rd-', 'gv-', 'co-']
-#     a = 0
-#     for phi in list_phi:
-#
-#         mask = df1['Phi'] == phi
-#         #  DF  con las tres columnas(corriente, error, phi) filtrado por angulo.
-#         filtrado_df1 = df1[mask]
-#
-#         # Sentencias para graficar, dentro del for, para que grafique todas las iteraciones(todos los angulos), y superponga las curvas.
-#         ax1 = plt.subplot(2, 2, 1)
-#         ax1.plot(filtrado_df1['Corriente Fase 1'], filtrado_df1['Error Fase 1'], estilos[a], label='phi '+ phi)               # (x,y para graficar) se filtra solo la columa del dataframe, con nombredataframe['nombre columna']
-#         plt.xlabel('Corriente [A]')
-#         plt.ylabel('Error fase 1 [%]')
-#         plt.legend()
-#
-#         if not list_e_fase2:
-#             pass
-#         else:
-#             filtrado_df2 = df2[mask]
-#             ax2 = plt.subplot(2, 2, 2)
-#             ax2.plot(filtrado_df2['Corriente Fase 2'], filtrado_df2['Error Fase 2'], estilos[a], label='phi ' + phi)
-#             plt.xlabel('Corriente [A]')
-#             plt.ylabel('Error fase 2 [%]')
-#             plt.legend()
-#
-#             filtrado_df3 = df3[mask]
-#             ax3 = plt.subplot(2, 2, 3)
-#             ax3.plot(filtrado_df3['Corriente Fase 3'], filtrado_df3['Error Fase 3'], estilos[a], label='phi ' + phi)
-#             # plt.title('Fig. 3')
-#             plt.xlabel('Corriente [A]')
-#             plt.ylabel('Error fase 3 [%]')
-#             plt.legend()
-#
-#         a += 1
-#     a = 0
-#
-#     for phi4 in list_phi_4:
-#         mask = df4['Phi'] == phi4
-#         filtrado_df4 = df4[mask]
-#
-#         if not list_e_fase123:
-#             pass
-#         else:
-#             ax4 = plt.subplot(2, 2, 4)
-#             ax4.plot(filtrado_df4['Corriente Fase 123'], filtrado_df4['Error Fase 123'], estilos[a], label='phi '+phi4)
-#             plt.xlabel('Corriente [A]')
-#             plt.ylabel('Error fase 123 [%]')
-#             plt.legend()
-#         a += 1
-#     a = 0
-#
-#     # plt.figure(figsize= (15, 15))
-#     plt.tight_layout()                 # Ajusta los graficos
-#     plt.savefig(name_file + '.png')
-#     # plt.show()
-#     plt.close('all')
-
